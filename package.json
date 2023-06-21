@@ -1,0 +1,20 @@
+{
+  "name": "cypress-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": {
+    "email": "sohan@codebuddy.co",
+    "name": "Sohan Dutta"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.15.0"
+  }
+}
