@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const MailSlurp = require("mailslurp-client").default;
+
+const mailslurp = new MailSlurp({
+  apiKey: Cypress.env("MAILSLURP_API_KEY"),
+});
+
+Cypress.Commands.add("mailslurp", () => {
+  return Promise.resolve(mailslurp);
+});
